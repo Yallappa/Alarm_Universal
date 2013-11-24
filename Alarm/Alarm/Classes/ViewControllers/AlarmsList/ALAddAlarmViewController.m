@@ -303,7 +303,7 @@ typedef enum
                 dateCell.contentView.backgroundColor = [UIColor whiteColor];
             }
             
-            dateCell.textLabel.text = _alarmDateString;
+            dateCell.textLabel.text = _alarmDateString ? _alarmDateString : NSLocalizedString(@"enter.date.placeholder", nil);
             
             alarmCell = dateCell;
             

@@ -12,6 +12,7 @@
 //ALAddAlarmViewController
 "add.alarms.view.title" = "Add Alarm";
 "edit.alarms.view.title" = "Edit Alarm";
+"enter.date.placeholder" = "Tap to enter date";
 "cancel" = "Cancel";
 "save" = "Save";
 "OK" = "OK";
