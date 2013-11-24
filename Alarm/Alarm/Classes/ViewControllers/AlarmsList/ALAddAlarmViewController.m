@@ -299,6 +299,7 @@ typedef enum
                                                   reuseIdentifier:@"UITableViewAlarmCell"];
                 dateCell.selectionStyle = UITableViewCellSelectionStyleNone;
                 dateCell.textLabel.backgroundColor = [UIColor whiteColor];
+                dateCell.textLabel.font = [UIFont systemFontOfSize:15];
                 dateCell.contentView.backgroundColor = [UIColor whiteColor];
             }
             
