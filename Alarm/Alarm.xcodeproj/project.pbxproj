@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1806F81A184FA6E7007D973F /* UIWindow+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806F819184FA6E7007D973F /* UIWindow+Shake.m */; };
 		18400ED918427C2800905BFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18400ED818427C2800905BFD /* Foundation.framework */; };
 		18400EDB18427C2800905BFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18400EDA18427C2800905BFD /* CoreGraphics.framework */; };
 		18400EDD18427C2800905BFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18400EDC18427C2800905BFD /* UIKit.framework */; };
@@ -31,7 +32,6 @@
 		18400F331842805F00905BFD /* ALAddAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18400F321842805F00905BFD /* ALAddAlarmViewController.m */; };
 		18400F361842809400905BFD /* ALDateTimePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 18400F351842809400905BFD /* ALDateTimePicker.m */; };
 		18400F39184280CD00905BFD /* ALTextFieldTableViewCellCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18400F38184280CD00905BFD /* ALTextFieldTableViewCellCell.m */; };
-		188C1E34184FA1D600DA35C1 /* UIWindow+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 188C1E33184FA1D600DA35C1 /* UIWindow+Shake.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1806F818184FA6E7007D973F /* UIWindow+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Shake.h"; sourceTree = "<group>"; };
+		1806F819184FA6E7007D973F /* UIWindow+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Shake.m"; sourceTree = "<group>"; };
 		18400ED518427C2800905BFD /* Alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18400ED818427C2800905BFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18400EDA18427C2800905BFD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -83,8 +85,6 @@
 		18400F351842809400905BFD /* ALDateTimePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDateTimePicker.m; sourceTree = "<group>"; };
 		18400F37184280CD00905BFD /* ALTextFieldTableViewCellCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTextFieldTableViewCellCell.h; sourceTree = "<group>"; };
 		18400F38184280CD00905BFD /* ALTextFieldTableViewCellCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTextFieldTableViewCellCell.m; sourceTree = "<group>"; };
-		188C1E32184FA1D600DA35C1 /* UIWindow+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Shake.h"; sourceTree = "<group>"; };
-		188C1E33184FA1D600DA35C1 /* UIWindow+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Shake.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,8 +188,6 @@
 				18400F0C18427D9300905BFD /* ViewControllers */,
 				18400F0A18427D9300905BFD /* Backend */,
 				18400F0B18427D9300905BFD /* Utility */,
-				188C1E32184FA1D600DA35C1 /* UIWindow+Shake.h */,
-				188C1E33184FA1D600DA35C1 /* UIWindow+Shake.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -208,6 +206,8 @@
 		18400F0B18427D9300905BFD /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				1806F818184FA6E7007D973F /* UIWindow+Shake.h */,
+				1806F819184FA6E7007D973F /* UIWindow+Shake.m */,
 				18400F2218427F3E00905BFD /* ALUtility.h */,
 				18400F2318427F3E00905BFD /* ALUtility.m */,
 				18400F2518427F7000905BFD /* ALConstants.h */,
@@ -383,7 +383,7 @@
 				18400F2418427F3E00905BFD /* ALUtility.m in Sources */,
 				18400EE518427C2800905BFD /* main.m in Sources */,
 				18400F1418427D9300905BFD /* ALAppDelegate.m in Sources */,
-				188C1E34184FA1D600DA35C1 /* UIWindow+Shake.m in Sources */,
+				1806F81A184FA6E7007D973F /* UIWindow+Shake.m in Sources */,
 				18400F361842809400905BFD /* ALDateTimePicker.m in Sources */,
 				18400F331842805F00905BFD /* ALAddAlarmViewController.m in Sources */,
 				18400F1E18427ED400905BFD /* ALAlarmObject.m in Sources */,
