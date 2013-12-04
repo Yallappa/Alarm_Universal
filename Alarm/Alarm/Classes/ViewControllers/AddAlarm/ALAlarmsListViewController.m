@@ -20,7 +20,7 @@
 @property (weak, nonatomic) NSMutableArray *alarmsList;
 
 @property (strong, nonatomic) NSString *currentAlarmUiniqueID;
-@property (strong, nonatomic) ALAlarmAlertView *alarmAlertView;
+@property (strong, nonatomic) UIAlertView *alarmAlertView;
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 
 @end
@@ -54,6 +54,11 @@
                                                               [_alarmsTableView reloadData];
                                                           });
                                                       }];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(mainWindowDidReceiveShakeGesture:)
+                                                     name:kUIWindowDidShake
+                                                   object:nil];
         
         self.alarmsList = [ALAlarmsManager sharedManager].allAlarmsList;
     }
@@ -194,11 +199,11 @@
     }
     
     self.currentAlarmUiniqueID = alarmUniqueID;
-    self.alarmAlertView = [[ALAlarmAlertView alloc] initWithTitle:NSLocalizedString(@"Alarm", nil)
-                                                          message:notificationBody
-                                                         delegate:self
-                                                cancelButtonTitle:NSLocalizedString(@"close", nil)
-                                                otherButtonTitles:NSLocalizedString(@"snooze", nil), nil];
+    self.alarmAlertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Alarm", nil)
+                                                     message:notificationBody
+                                                    delegate:self
+                                           cancelButtonTitle:NSLocalizedString(@"close", nil)
+                                           otherButtonTitles:NSLocalizedString(@"snooze", nil), nil];
     [_alarmAlertView show];
     
 }
@@ -231,6 +236,14 @@
             
         default:
             break;
+    }
+}
+
+- (void)mainWindowDidReceiveShakeGesture:(NSNotification *)notification
+{
+    if (_alarmAlertView && _alarmAlertView.visible)
+    {
+        [_alarmAlertView dismissWithClickedButtonIndex:eAlarmAlertActionSnooze animated:YES];
     }
 }
 

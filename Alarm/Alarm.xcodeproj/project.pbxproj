@@ -31,6 +31,7 @@
 		18400F331842805F00905BFD /* ALAddAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18400F321842805F00905BFD /* ALAddAlarmViewController.m */; };
 		18400F361842809400905BFD /* ALDateTimePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 18400F351842809400905BFD /* ALDateTimePicker.m */; };
 		18400F39184280CD00905BFD /* ALTextFieldTableViewCellCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18400F38184280CD00905BFD /* ALTextFieldTableViewCellCell.m */; };
+		188C1E34184FA1D600DA35C1 /* UIWindow+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 188C1E33184FA1D600DA35C1 /* UIWindow+Shake.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +62,7 @@
 		18400F0918427D9300905BFD /* ALAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAppDelegate.m; sourceTree = "<group>"; };
 		18400F1018427D9300905BFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18400F1318427D9300905BFD /* alarm_sound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound1.mp3; sourceTree = "<group>"; };
-		18400F1A18427E0200905BFD /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18400F1A18427E0200905BFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		18400F1C18427ED400905BFD /* ALAlarmObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAlarmObject.h; sourceTree = "<group>"; };
 		18400F1D18427ED400905BFD /* ALAlarmObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAlarmObject.m; sourceTree = "<group>"; };
 		18400F1F18427F0D00905BFD /* ALAlarmsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAlarmsManager.h; sourceTree = "<group>"; };
@@ -82,6 +83,8 @@
 		18400F351842809400905BFD /* ALDateTimePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDateTimePicker.m; sourceTree = "<group>"; };
 		18400F37184280CD00905BFD /* ALTextFieldTableViewCellCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTextFieldTableViewCellCell.h; sourceTree = "<group>"; };
 		18400F38184280CD00905BFD /* ALTextFieldTableViewCellCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTextFieldTableViewCellCell.m; sourceTree = "<group>"; };
+		188C1E32184FA1D600DA35C1 /* UIWindow+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Shake.h"; sourceTree = "<group>"; };
+		188C1E33184FA1D600DA35C1 /* UIWindow+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Shake.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +188,8 @@
 				18400F0C18427D9300905BFD /* ViewControllers */,
 				18400F0A18427D9300905BFD /* Backend */,
 				18400F0B18427D9300905BFD /* Utility */,
+				188C1E32184FA1D600DA35C1 /* UIWindow+Shake.h */,
+				188C1E33184FA1D600DA35C1 /* UIWindow+Shake.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -378,6 +383,7 @@
 				18400F2418427F3E00905BFD /* ALUtility.m in Sources */,
 				18400EE518427C2800905BFD /* main.m in Sources */,
 				18400F1418427D9300905BFD /* ALAppDelegate.m in Sources */,
+				188C1E34184FA1D600DA35C1 /* UIWindow+Shake.m in Sources */,
 				18400F361842809400905BFD /* ALDateTimePicker.m in Sources */,
 				18400F331842805F00905BFD /* ALAddAlarmViewController.m in Sources */,
 				18400F1E18427ED400905BFD /* ALAlarmObject.m in Sources */,

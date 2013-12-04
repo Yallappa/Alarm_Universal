@@ -14,4 +14,5 @@ typedef enum
     eAlarmAlertActionSnooze,
 }ALAlarmAlerActions;
 
-extern NSString* kDidAddNewAlarmNotification;
+extern NSString *kDidAddNewAlarmNotification;
+extern NSString *kUIWindowDidShake;

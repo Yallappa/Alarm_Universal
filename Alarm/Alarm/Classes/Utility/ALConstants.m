@@ -9,3 +9,4 @@
 #import "ALConstants.h"
 
 NSString *kDidAddNewAlarmNotification = @"DidAddNewAlarmNotification";
+NSString *kUIWindowDidShake = @"UIWindowDidShake";
